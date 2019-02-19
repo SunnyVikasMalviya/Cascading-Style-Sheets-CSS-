@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+
+	<style>
+		body 
+		{
+			color : green;
+		}
+		p.red 
+		{
+			color : red;  
+		}
+		p.blue
+		{
+			color : blue;
+			<!--Using classes like this will only apply this rule to the p tags having class name as blue-->
+		}
+		.underline
+		{
+			text-decoration : underline;
+			<!--Using classes like this will apply this rule to all the tags that have the class name as underline-->
+		}
+		.pink
+		{
+			color : pink;
+		}
+		.orange
+		{
+			color : orange;
+		}
+		
+	</style>
+
+</head>
+<body>
+
+<h1>The Fish Web Site</h1>
+
+<p class="red">
+Welcome to the Fish Wev Site. Everything you want to know about fish
+is in this web site.
+</p>
+
+<p>
+An extra paragraph to show that only the tags with classes are styled when class oriented styling is used.
+</p>
+<h2>
+This is a section on Bass Fish.
+</h2>
+
+<p class="blue">
+Bass fish live in lakes.
+	<blockquote class="underline pink orange">
+		Some unrequired paragraph    
+		<!--A tag can have multiple classes in it and all the class rules will be applied to it.-->
+		<!--I used multiple color classes here. Notice pink and orange-->
+		<!--The color class that has been defined last in your head.style tags will be used. In this case orange is defined at the end of the head.style tag.-->
+	</blockquote>
+</p>
+
+
+</body>
+</html>
